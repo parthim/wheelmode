@@ -1,5 +1,6 @@
 header {
     background-color:#fff;
+    padding: 0% 15%;
 
 }
 
@@ -32,4 +33,5 @@ header {
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-menu {display: block;}
+  
  
