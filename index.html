@@ -9,23 +9,29 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
-    <!-- header for options -->
+    <!-- header for options using navbar-->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container.fluid ">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"> 
+        <!-- Container fluid for wide containers -->
+        <div class="container-fluid ">
+            <!-- Navigation Bar header -->
+            <div class="navbar-header navbar-left">
+                <a href="#"> 
                     <img src="https://wheelmode.s3.me-south-1.amazonaws.com/media/cache/sylius_shop_product_original/static/header/logo.png" alt="logo">
                 </a>
+                <!-- Navigation icon for collapsed menu -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
             </div>
+            <!-- Menu that will be collapsed -->
             <div class="collapse navbar-collapse" id="myNavBar">
-                <ul class="navbar-nav nav">
-                    <li><a href="#">Tyres</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                <ul class="navbar-nav nav navbar-center">
+                    <li class = "topnav"><a href="#">Tyres</a></li>
+                    <!-- Dropdown will be applied from here -->
+                    <li class="topnav dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                        <!-- Dropdown menu -->
                         <ul class="dropdown-menu">
                           <li><a href="#">
                                   <img src="https://wheelmode.s3.me-south-1.amazonaws.com/media/cache/sylius_shop_product_original/static/home/search-banner/brake1.png" alt="brakes">
@@ -38,20 +44,94 @@
                           </a></li>
                         </ul>
                    </li>
-                     <li><a href="#">Installer Network</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Special Offers</a></li>
-                     <li><a href="#">Our Brands</a></li>
-                      <li><a href="#"><i class="fa fa-shopping-cart">&nbsp; cart</i></a></li>
+                   <!-- Dropdown ends here -->
+                     <li class = "topnav" ><a href="#">Installer Network</a></li>
+                      <li class = "topnav"><a href="#">Services</a></li>
+                      <li class = "topnav"><a href="#">Special Offers</a></li>
+                     <li class = "topnav"><a href="#">Our Brands</a></li>
+                      <li class = "topnav"><a href="#"><i class="fa fa-shopping-cart">&nbsp; cart</i></a></li>
                 </ul>
             </div>
         </div>
 
     </nav>
+    <!-- Navigation bar ends here -->
     <header>
         
     </header>
     <body>
-        
+        <!-- image file -->
+        <div >
+            <img src="https://wheelmode.s3.me-south-1.amazonaws.com/media/cache/sylius_shop_product_original/static/home/search-banner/car.png" alt="">
+        </div>
+        <!-- container starts here -->
+        <div class="container">
+<!-- THis row is for text -->
+            <div class="row">
+                <div class="col-sm-12" style="text-align: center;">
+                    <h2 class="text-color : danger">Our Four Step process</h2>
+                    <p>The easiest way to search and buy new tyres
+                    </p>
+                </div>
+            </div>
+            <!-- This row is to seperate columns -->
+            <!-- <div class="row">
+                <div class="col-sm">
+                    <img src="https://wheelmode.com/images/home/our-process/1.png  " alt="Tyre type">
+                    <h3>Search & select your tyrre</h3>
+                    <p>We stock a wide range of online tyres for all vehicles Choose Installation mode</p>
+                </div>
+                <div class="col-sm-1">
+                    <div class="arrows"></div>
+                </div>
+                <div class="col-sm">
+                    <img src="https://wheelmode.com/images/home/our-process/2.png" alt="Installation type">
+                    <h3>Choose Installation mode</h3>
+                    <p>You can select 100+ Installers across UAE, you can also choose mobile fitment or home delivery</p>
+                </div>
+                <div class="col-sm -1">
+                    <div class="arrows"></div>
+                </div>
+                <div class="col-sm">
+                    <img src="https://wheelmode.com/images/home/our-process/3.png" alt="online payment">
+                    <h3>Secure Online Payment</h3>
+                    <p>We ensure you that our payment gateways are 100% safe</p>
+                </div>
+                <div class="col-sm-1">
+                    <div class="arrows"></div>
+                </div>
+                <div class="col-sm">
+                    <img src="https://wheelmode.com/images/home/our-process/4.png" alt="delivery">
+                    <h3>Delivery & Installation</h3>
+                    <p>Within 24hrs your tyres will be delivered to your select location</p>
+                </div>
+            </div> -->
+
+            <!-- Using flex0 -->
+            <div class="flex-container">
+                <div>
+                    <img src="https://wheelmode.com/images/home/our-process/1.png  " alt="Tyre type">
+                    <h3>Search & select your tyrre</h3>
+                    <p>We stock a wide range of online tyres for all vehicles Choose Installation mode</p>
+                </div>
+                <div class="arrows"></div>
+                <div>
+                    <img src="https://wheelmode.com/images/home/our-process/2.png" alt="Installation type">
+                    <h3>Choose Installation mode</h3>
+                    <p>You can select 100+ Installers across UAE, you can also choose mobile fitment or home delivery</p>
+                </div>
+                <div class="arrows"></div>
+                <div>
+                    <img src="https://wheelmode.com/images/home/our-process/3.png" alt="online payment">
+                    <h3>Secure Online Payment</h3>
+                    <p>We ensure you that our payment gateways are 100% safe</p>
+                </div>
+                <div class ="arrows"></div>
+                <div><img src="https://wheelmode.com/images/home/our-process/4.png" alt="delivery">
+                    <h3>Delivery & Installation</h3>
+                    <p>Within 24hrs your tyres will be delivered to your select location</p>/div>
+                <div>
+            </div>
+        </div>
     </body>
     </html>
